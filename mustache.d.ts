@@ -15,7 +15,7 @@ export declare class MustacheContext {
   lookup(name: string): any;
 }
 
-export default {
+declare const mustache: {
   render: (
     template: string,
     view: any | MustacheContext,
@@ -25,3 +25,5 @@ export default {
 
   escape: EscapeFunction
 };
+
+export default mustache;
